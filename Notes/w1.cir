@@ -1,0 +1,15 @@
+The first line is always a comment
+*Comment done like this
+#Comment also done like this
+V1 2 1 SIN(0 5 1)
+R1 2 0 2k
+R2 0 1 4k
+
+#These are the commands to run analysis
+*.op
+*.dc
+*.tran
+
+#.op
+#.dc V1 3 12 1
+.tran .01 4 0 .01

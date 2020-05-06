@@ -1,0 +1,10 @@
+#Creating the PMOS inverter for the prelab and getting its measurements
+.model pmod PMOS KP=80U VTO=-0.7V
+
+VDD 1 0 DC -5V
+RD 1 2 3.9k
+VA 3 0 5V
+M1 2 3 0 4 pmod W=10U L=2U
+
+.dc VA -5 0 0.001
+.end

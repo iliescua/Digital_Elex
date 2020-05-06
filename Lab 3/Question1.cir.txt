@@ -1,0 +1,12 @@
+This is question 11 for pre-lab 3
+*Diode 1N4148 used from ModelSim
+.MODEL 1N4148 D(Is=0.1p Rs=1.6 CJO=2p Tt=12n Bv=100 Ibv=0.1p)
+
+V1 1 0 DC 0.7V
+*Voltage Controlled voltage source
+E1 0 3 1 0 0.7
+D1 1 2 1N4148
+D2 3 2 1N4148
+R1 0 2 1000
+
+.DC V1 0 1 0.1

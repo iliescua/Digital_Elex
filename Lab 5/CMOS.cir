@@ -1,0 +1,12 @@
+#Creating the CMOS inverter for the prelab and getting its measurements
+.model pmod PMOS KP=80U VTO=-0.7V
+.model nmod NMOS KP=200U VTO=0.6V
+
+VDD 1 0 DC 5V
+M1 4 3 1 2 pmod W=10U L=2U
+VA 3 0 5V
+M2 4 3 0 5 nmod W=4U L=2U
+
+.dc VA 0 5 0.001
+.PROBE
+.end

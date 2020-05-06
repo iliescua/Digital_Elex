@@ -1,0 +1,11 @@
+#Creating the RTL inverter for the prelab and getting its measurements
+.model npnt NPN BF=100 IS=1.8f
+
+VCC 1 0 DC 5V
+RC 1 2 3.9k
+VA 3 0 5V
+RB 3 4 3.9k
+Q1 2 4 0 npnt
+
+.dc VA 0 5 0.001
+.end

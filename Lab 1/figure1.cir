@@ -1,0 +1,8 @@
+Lab 1 Figure 1
+V1 1 0 DC 10
+V2 0 3 DC 12
+R1 1 2 2k
+R2 2 0 4k
+R3 2 3 4k
+
+.op
